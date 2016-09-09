@@ -4,7 +4,10 @@
   "description": "Hackages program's hackjam, hackday, hackX",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "hackages test -w",
+    "watch": "hackages watch",
+    "live": "hackages live",
+    "start": "npm-run-all --parallel watch live"
   },
   "repository": {
     "type": "git",
@@ -15,10 +18,14 @@
     "timeline",
     "program"
   ],
-  "author": "Team@hackages.io",
+  "author": "team@hackages.io",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hackages/program/issues"
   },
-  "homepage": "https://github.com/hackages/program#readme"
+  "homepage": "https://github.com/hackages/program#readme",
+  "devDependencies": {
+    "hackages": "0.0.8",
+    "npm-run-all": "^3.1.0"
+  }
 }
