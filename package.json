@@ -1,31 +1,34 @@
 {
-  "name": "program",
-  "version": "1.0.0",
-  "description": "Hackages program's hackjam, hackday, hackX",
+  "name": "program.hackages.io",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "hackages test -w",
-    "watch": "hackages watch",
-    "live": "hackages live",
-    "start": "npm-run-all --parallel watch live"
+    "test": "jest",
+    "run:browser": "hackages live",
+    "run:watch": "hackages watch",
+    "prestart": "npm i",
+    "start": "npm-run-all --parallel run:watch run:browser",
+    "deploy": "surge"
+  },
+  "keywords": [
+    "react, hackages, haskell, education @ Hackages"
+  ],
+  "author": "007@hackages.io",
+  "license": "MIT",
+  "dependencies": {
+    "hackages": "0.0.8",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^2.1.1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hackages/program.git"
   },
-  "keywords": [
-    "Hackages",
-    "timeline",
-    "program"
-  ],
-  "author": "team@hackages.io",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hackages/program/issues"
   },
-  "homepage": "https://github.com/hackages/program#readme",
-  "devDependencies": {
-    "hackages": "0.0.8",
-    "npm-run-all": "^3.1.0"
-  }
+  "homepage": "https://github.com/hackages/program#readme"
 }

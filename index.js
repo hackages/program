@@ -1,15 +1,17 @@
-import React, { DOM, Component } from 'react';
+import "./assets/css/reset.css";
+import './assets/css/style.css';
+import React from 'react';
 import { render } from 'react-dom';
+import Header from './components/header';
+import Main from './components/main';
 
-class Main extends Component {
-  render (){
-    return (
-      DOM.h1(null, "hi hao, React")
-    );
-  }
-}
+const App = () => {
+  return (
+          <div>
+            <Header/>
+            <Main />
+          </div>
+         );
+};
 
-const domElement = document.getElementById('program');
-
-render(<Main/>, domElement);
-
+render(<App/>, document.getElementById('hackjam'));
