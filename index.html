@@ -1,23 +1,36 @@
-<html>
+<html lang="en" class="no-js">
   <head>
-    <title>Angular 2 QuickStart</title>
+    <title>Hackages Education</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
     <!-- 1. Load libraries -->
      <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
+   
+    
+
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
     <script>
-      System.import('app').catch(function(err){ console.error(err); });
+      System.import('app').catch(function(err){ 
+
+        System.import('./js/jquery-2.1.1.js');
+        System.import('./js/jquery.mixitup.min.js');
+        System.import('./js/main.js');
+
+       });
     </script>
   </head>
   <!-- 3. Display the application -->
   <body>
-    <my-app>Loading...</my-app>
+    <hackages-app>Loading...</hackages-app>
   </body>
 </html>

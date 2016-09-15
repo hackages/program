@@ -16,7 +16,7 @@ var Header = (function () {
     }
     Header = __decorate([
         core_1.Component({
-            template: "\n        <header class=\"cd-header\">\n            <h1>Education by Hackages</h1>\n        </header>\n    ",
+            template: "\n        <header class=\"cd-header\">\n            <h1>Education by Hackages</h1>\n        </header>\n        <main class=\"cd-main-content\">\n            <div class=\"cd-tab-filter-wrapper\">\n                <div class=\"cd-tab-filter\">\n                    <ul class=\"cd-filters\">\n                        <li class=\"placeholder\"> \n                            <a data-type=\"all\" href=\"#0\">All</a> <!-- selected option on mobile -->\n                        </li> \n                        <li class=\"filter\"><a class=\"selected\" href=\"#0\" data-type=\"all\">All</a></li>\n                        <li class=\"filter\" data-filter=\".color-1\"><a href=\"#0\" data-type=\"color-1\">Color 1</a></li>\n                        <li class=\"filter\" data-filter=\".color-2\"><a href=\"#0\" data-type=\"color-2\">Color 2</a></li>\n                    </ul> <!-- cd-filters -->\n                </div> <!-- cd-tab-filter -->\n            </div> <!-- cd-tab-filter-wrapper -->\n        </main>\n    ",
         }), 
         __metadata('design:paramtypes', [String])
     ], Header);
