@@ -6,12 +6,9 @@ import Header from './components/header';
 import Main from './components/main';
 
 const App = () => {
-  return (
-          <div>
-            <Header/>
-            <Main />
-          </div>
-         );
+  return <Main />;
 };
 
-render(<App/>, document.getElementById('hackjam'));
+const dom = document.getElementById('education');
+
+render(<App/>, dom);

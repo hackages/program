@@ -3,7 +3,17 @@ import React, { PropTypes } from 'react';
 const Book = ({ source }) => {
   const book = source;
    return (
-     <li><img src={ book.cover }/></li>
+     <li>
+       <div className="card">
+         <div className="cover">
+           <img src={ book.cover }/>
+         </div>
+         <div className="description">
+         </div>
+         <div className="actions">
+         </div>
+      </div>
+     </li>
    );
 }
 
