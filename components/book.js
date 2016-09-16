@@ -1,10 +1,11 @@
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 
 const Book = ({ source }) => {
   const book = source;
    return (
      <li>
-       <div className="card">
+       <Link to={`courses/${source.title}`} className="card">
          <div className="cover">
            <img src={ book.cover }/>
          </div>
@@ -12,7 +13,7 @@ const Book = ({ source }) => {
          </div>
          <div className="actions">
          </div>
-      </div>
+      </Link>
      </li>
    );
 }
