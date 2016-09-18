@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+import Header from '../components/header';
 
 class Courses extends Component{
-  constructor(props) {
+  constructor() {
     super();
   }
 
   render() {
    return (
     <div>
-     <Header title={ props.title }/>
+     <Header title={ this.props.title }/>
      <h1>My Course</h1>
-      { props.children }
+      { this.props.children }
     </div>
    );
   }
