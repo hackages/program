@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import filters from '../mocks/filters';
 import books from '../mocks/books';
-import BookList from './bookList';
-import SideBarFilters from './sideBarFilters';
-import FilterMenu from './filterMenu';
+import BookList from '../components/bookList';
+import SideBarFilters from '../components/sideBarFilters';
+import FilterMenu from '../components/filterMenu';
 
 class Main extends Component {
   constructor () {
